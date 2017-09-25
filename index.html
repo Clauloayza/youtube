@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Youtube jQuery</title>
+
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="node_modules/axios/dist/axios.min.js"></script>
+   <script src="node_modules/youtube-api-search/index.js"></script>
+   <link rel="stylesheet" href="menu.css">
+   <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <div id="wrapper">
+        	
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-align-justify" style="margin-right:15px; color:#a8a7a7; font-size:15px;padding:4px"></span>
+                       <img src="youtubeImg/youtube_logo_2013-svg.png" alt="" style="width:75px">
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-home" style="margin-right:15px; color:#888888; font-size:17px"></span> Inicio</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-heart-empty" style="margin-right:15px; color:#888888; font-size:17px"></span>Tendencias</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-list-alt" style="margin-right:15px; color:#888888; font-size:17px"></span>Suscripciones</a>
+                </li>
+                <hr>
+                <h3>BIBLIOTECA</h3>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-repeat" style="margin-right:15px; color:#888888; font-size:17px"></span>Historial</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-time" style="margin-right:15px; color:#888888; font-size:17px"></span>Ver más tarde</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-align-justify" style="margin-right:15px; color:#888888; font-size:17px"></span>Favorites</a>
+                </li>
+                <li>
+                    <a href="#"><span class="glyphicon glyphicon-thumbs-up" style="margin-right:15px; color:#888888; font-size:17px"></span>Videos que me gustan</a>
+                </li>
+                <hr>
+                <h3>SUSCRIPCIONES</h3>
+                <li>
+                    <i></i><a href="#">Team</a>
+                </li>
+                <li>
+                    <i></i><a href="#">Coders Laboratoria</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+    			<span class="hamb-middle"></span>
+				<span class="hamb-bottom"></span>
+           		<img src="youtubeImg/youtube_logo_2013-svg.png" style="width:80px; margin-left:50px" alt="">
+            </button>
+             <div class="input-group" style="position:absolute; top:16px; margin-left:28%; width:35%">
+      			<input type="text" class="form-control" placeholder="Search">
+      			<span class="input-group-btn">
+       			 <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+      			</span>
+    		</div>
+       		<div style="position:absolute; top:10px; right:5%">
+       			<span class="glyphicon glyphicon-open" style="margin-right:15px; color:#888888; font-size:20px;margin:10px"></span>
+       			<span class="glyphicon glyphicon-th" style="margin-right:15px; color:#888888; font-size:20px;margin:10px"></span>
+       			<span class="glyphicon glyphicon-bell" style="margin-right:15px; color:#888888; font-size:20px;margin:10px"></span>
+       			<span><img src="youtubeImg/img.jpg" style="width:35px; border-radius:100px;margin:10px" alt=""></span>
+       		</div>
+        </div>
+		  
+		  
+		</div>
+		</div>
+	  </div><!-- /.container-fluid -->
+	</nav>
+  </header>
+   <div > 
+      <ol id = "root">
+         
+      </ol>
+   </div>
+   <script src="app.js"></script>
+   <script src="menu.js"></script>
+</body>
+</html>
