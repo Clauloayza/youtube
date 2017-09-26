@@ -45,7 +45,6 @@ html { height: 100%;}
 #page-content-wrapper {
     width: 100%;
     padding-top: 70px;
-	
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -106,9 +105,12 @@ html { height: 100%;}
 
 .sidebar-nav li a {
     display: block;
-    color: #ddd;
+    color: #524646;
+	font-weight: 500;
     text-decoration: none;
-    padding: 10px 15px 10px 30px;    
+    padding: 10px 15px 10px 30px;
+	text-transform: none;
+	font-size: 14px;
 }
 
 
@@ -138,11 +140,12 @@ html { height: 100%;}
   top: 20px;  
   z-index: 999;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 23px;
+  height: 25px;
   margin-left: 15px;
   background: transparent;
   border: none;
+  color: #a0a0a0;
 }
 .hamburger:hover,
 .hamburger:focus,
@@ -168,8 +171,11 @@ html { height: 100%;}
   -webkit-transition: all .35s ease-in-out;
 }
 h3{
-	color: #a0a0a0;
-	font-size: 3px;
+	color: #969494;
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 15px;
+	font-family:sans-serif;
 }
 
 .hamburger.is-closed .hamb-top,
@@ -180,13 +186,13 @@ h3{
 .hamburger.is-open .hamb-bottom {
   position: absolute;
   left: 0;
-  height: 4px;
+  height: 3px;
   width: 100%;
 }
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom {
-  background-color: #1a1a1a;
+  background-color: #a0a0a0;
 }
 .hamburger.is-closed .hamb-top { 
   top: 5px; 
